@@ -7,18 +7,24 @@ import {
   Vec3,
   view,
   UITransform,
-  Sprite,
-  SpriteFrame,
   resources,
-  director,
-  SpriteAtlas,
-  assetManager,
+  JsonAsset,
 } from "cc";
-import { Flag } from "./Flag";
 import { Suitcase } from "./Suitcase";
-
-const { ccclass, property } = _decorator;
 import { GlobalEvents } from "./GlobalEvents";
+import { Flag } from "./Flag";
+const { ccclass, property } = _decorator;
+
+interface Country {
+  c: string; // Country code
+  n: string; // Country name
+  p: number; // Popularity
+}
+
+interface Question {
+  answer: Country;
+  options: Country[]; // Array of cca2 codes for options
+}
 
 @ccclass("GameController")
 export class GameController extends Component {
@@ -34,25 +40,99 @@ export class GameController extends Component {
   @property
   beltSpeed: number = 100;
 
-  start() {
-    GlobalEvents.emit("update-country-name", "法国");
-    GlobalEvents.emit("update-score", 500);
+  private countryData: Country[] = [];
+  private questions: Question[] = [];
+  private questionIndex = 0;
+  private correctAnswers = 0;
+  private incorrectAnswers = 0;
+  private score = 0;
+  private questionStartTime = 0;
+  private maxTimeForFullPoints = 3;
 
-    this.addFlagsToScreen();
-
-    // Start adding suitcases periodically
-    this.schedule(this.addSuitcaseWithoutFlag, 5, Infinity); // Every 5 seconds
+  onLoad() {
+    this.loadCountryData();
   }
 
-  addFlagsToScreen() {
+  start() {
+    setTimeout(() => {
+      this.loadQuestions();
+    }, 1000);
+  }
+
+  loadCountryData() {
+    resources.load("data/countries", JsonAsset, (err, asset) => {
+      if (err) {
+        console.error("Failed to load countries:", err);
+        return;
+      }
+      const jsonData = (asset as JsonAsset).json;
+      if (Array.isArray(jsonData)) {
+        this.countryData = jsonData;
+        console.log(this.countryData);
+        // You can now access countryData as an array of objects
+      } else {
+        console.error("The loaded JSON is not an array.");
+      }
+    });
+  }
+
+  loadQuestions() {
+    const eligibleCountries = this.countryData.filter(
+      (country) => country.p >= 140
+    );
+    const shuffledCountries = eligibleCountries.sort(() => 0.5 - Math.random());
+    const selectedCountries = shuffledCountries.slice(0, 20);
+
+    this.questions = selectedCountries.map((country) => {
+      let optionsCountries = eligibleCountries
+        .filter((option) => option.c !== country.c)
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 5);
+
+      // Ensure the answer is not among the options
+      optionsCountries = optionsCountries.filter(
+        (option) => option.c !== country.c
+      );
+
+      const question: Question = {
+        answer: country,
+        options: optionsCountries,
+      };
+
+      return question;
+    });
+
+    this.updateQuestion();
+  }
+
+  updateQuestion() {
+    // Update the question here
+    this.questionStartTime = Date.now(); // Reset timer for each question
+    this.clearFlags();
+
+    const currentQuestion = this.questions[this.questionIndex];
+    // Prepare country codes for the flags: answer + options, and shuffle
+    // Combine answer and options, ensuring answer is not duplicated among options
+    const allCountries = [currentQuestion.answer, ...currentQuestion.options];
+
+    // Shuffle the combined array to randomize the order of flags displayed
+    const shuffledCountries = allCountries.sort(() => Math.random() - 0.5);
+
+    // Extract cca2 codes for addFlagsToScreen, assuming it needs just the codes
+    const countryCodes = shuffledCountries.map((country) => country.c);
+
+    this.addFlagsToScreen(countryCodes);
+    GlobalEvents.emit("update-country-name", currentQuestion.answer.n);
+    this.addSuitcaseWithoutFlag(currentQuestion.answer.c);
+  }
+
+  addFlagsToScreen(countryCodes: string[]) {
     const flagWidth = 160;
     const flagHeight = 120;
     const spacing = 24;
     const rows = 2;
     const cols = 3;
     const canvasSize = view.getVisibleSize();
-
-    const countryCodes = ["GB", "US", "CN", "IT", "FR", "IN"];
 
     // Calculate the total grid width and height
     const totalWidth = cols * flagWidth + (cols - 1) * spacing;
@@ -65,6 +145,7 @@ export class GameController extends Component {
       for (let col = 0; col < cols; col++) {
         // Instantiate a new flag
         const newFlag = instantiate(this.flagPrefab);
+        console.log("newFlag", newFlag);
         newFlag.on("flag-tapped", this.handleFlagTapped, this);
 
         // Calculate and set the position of the flag within the grid
@@ -72,7 +153,10 @@ export class GameController extends Component {
         const y = startY - row * (flagHeight + spacing);
         newFlag.setPosition(new Vec3(x, y, 0));
         const flagComponent = newFlag.getComponent(Flag);
-        flagComponent.setFlag(countryCodes[row * 3 + col], "US");
+        flagComponent.setFlag(
+          countryCodes[row * 3 + col].toUpperCase(),
+          "嘀哩嘀哩"
+        );
 
         // Optionally, adjust the size of the flag node to match the desired flag dimensions
         // This step may require accessing the UITransform component of the newFlag
@@ -87,53 +171,79 @@ export class GameController extends Component {
     }
   }
 
-  handleFlagTapped(cca2: string) {
-    for (const child of this.node.children) {
-      // Check if the child is a suitcase
-      if (child.name.startsWith("Suitcase")) {
-        // Adjust condition based on your naming convention
-        const suitcaseComponent = child.getComponent(Suitcase); // Adjust Suitcase to your actual component class name
+  clearFlags() {
+    this.node.children.forEach((child) => {
+      if (child.getComponent(Flag)) {
+        // Adjust condition if needed
+        child.destroy();
+      }
+    });
+  }
+
+  onPlayerAnswer(isCorrect: boolean) {
+    const timeElapsed = (Date.now() - this.questionStartTime) / 1000; // Time elapsed in seconds
+    const timeFactor = Math.max(0, 1 - timeElapsed / this.maxTimeForFullPoints); // Decreases with time
+
+    if (isCorrect) {
+      this.correctAnswers++;
+      // Apply the time factor to the score calculation
+      this.score += Math.round(10 + 10 * timeFactor); // Example formula
+    } else {
+      this.incorrectAnswers++;
+      this.score -= 5; // Incorrect answers could have a fixed deduction
+    }
+
+    GlobalEvents.emit("update-score", this.score);
+
+    console.log(`Score: ${this.score}, Time Elapsed: ${timeElapsed}s`);
+  }
+
+  // Example usage: Call this when a player selects a flag
+  checkAnswer(cca2: string) {
+    const currentQuestion = this.questions[this.questionIndex];
+    const isCorrect = cca2.toLowerCase() === currentQuestion.answer.c;
+    console.log(`Selected: ${cca2}, Correct: ${currentQuestion.answer.c}`);
+    if (isCorrect) {
+      const correspondingSuitcase = this.node.children.find(
+        (child) => child.name === `Suitcase_${cca2.toLowerCase()}`
+      );
+      if (correspondingSuitcase) {
+        const suitcaseComponent = correspondingSuitcase.getComponent(Suitcase);
         if (suitcaseComponent) {
           suitcaseComponent.stickFlag(cca2);
-          break; // Exit after attaching the flag to the first suitcase
         }
+      } else {
+        console.error("Corresponding suitcase not found.");
       }
+    }
+
+    this.onPlayerAnswer(isCorrect);
+
+    // Move to the next question
+    this.questionIndex++;
+    if (this.questionIndex < this.questions.length) {
+      this.updateQuestion();
+    } else {
+      // Game over or loop back to start
+      console.log("Game Over or Loop to Start");
     }
   }
 
-  addSuitcaseWithoutFlag() {
-    // Create a new instance of the suitcase prefab
+  handleFlagTapped(cca2: string) {
+    console.log("Flag Tapped: " + cca2);
+    this.checkAnswer(cca2);
+  }
+
+  addSuitcaseWithoutFlag(cca2: string) {
     const newSuitcase = instantiate(this.suitcasePrefab);
-
-    // Assuming you have a "Flag" node under each suitcase prefab instance
-    const flagNode = newSuitcase.getChildByName("Flag");
-
-    if (flagNode) {
-      // Try to get the Sprite component from the flag node
-      let flagSprite = flagNode.getComponent(Sprite);
-
-      // If the flag node doesn't have a Sprite component, add it
-      if (!flagSprite) {
-        flagSprite = flagNode.addComponent(Sprite);
-      }
-    } else {
-      console.error("Flag node not found in the instantiated prefab");
-    }
+    newSuitcase.name = `Suitcase_${cca2}`;
 
     const canvasSize = view.getVisibleSize();
-
     const beltPosition = this.conveyorBeltNode.getPosition();
-
-    // Calculate the suitcase's position relative to the track
-    // Let's say the suitcase should appear just above the track
-
     const yPosition = beltPosition.y;
-
     const xPosition = canvasSize.width;
-
     newSuitcase.setPosition(new Vec3(xPosition, yPosition, 0));
 
-    // Add the new suitcase to the canvas
     this.node.addChild(newSuitcase);
   }
 }

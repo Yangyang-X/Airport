@@ -11,7 +11,7 @@
   },
   {
     "__type__": "cc.Scene",
-    "_name": "scene-2d",
+    "_name": "scene",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": null,
@@ -1916,7 +1916,7 @@
       "__id__": 56
     },
     "asset": {
-      "__uuid__": "03ea3280-b024-4de2-b3f8-082fd5e57fca",
+      "__uuid__": "c6fd46be-5549-460c-8d5f-a05d9803d3d1",
       "__expectedType__": "cc.Prefab"
     },
     "fileId": "ddnfEdLS1BNZfR3bhWHlfM",
@@ -2400,7 +2400,7 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 50.70703125,
+      "width": 240,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -2433,7 +2433,7 @@
     "_string": "欢迎👏🏻",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 16,
+    "_actualFontSize": 25,
     "_fontSize": 24,
     "_fontFamily": "Arial",
     "_lineHeight": 40,
@@ -3298,7 +3298,7 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 53.390625,
+      "width": 17.796875,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -3328,7 +3328,7 @@
       "b": 255,
       "a": 255
     },
-    "_string": "100",
+    "_string": "0",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
     "_actualFontSize": 32,

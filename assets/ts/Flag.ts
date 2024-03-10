@@ -38,17 +38,39 @@ export class Flag extends Component {
       flagSprite.spriteFrame = spriteFrame;
 
       let uiTransform = flagNode.getComponent(UITransform);
-      if (uiTransform) {
-        let nodeWidth = 150; // Get the current width of the flag node
-
-        let aspectRatio =
-          spriteFrame.originalSize.height / spriteFrame.originalSize.width;
-        let contentHeight = nodeWidth * aspectRatio; // Calculate the new height based on the aspect ratio
-
-        // Set the new size for the node
-        uiTransform.setContentSize(nodeWidth, contentHeight);
+      if (!uiTransform) {
+        uiTransform = flagNode.addComponent(UITransform);
       }
 
+      // Container dimensions
+      const containerWidth = 150;
+      const containerHeight = 100;
+
+      // Calculate the aspect ratio of the flag image
+      const imageAspectRatio =
+        spriteFrame.originalSize.height / spriteFrame.originalSize.width;
+
+      // Calculate the aspect ratio of the container
+      const containerAspectRatio = containerHeight / containerWidth;
+      console.log(imageAspectRatio, containerAspectRatio);
+
+      let scaleWidth, scaleHeight;
+
+      // Compare the aspect ratios to decide how to scale the image
+      if (imageAspectRatio >= 0.67) {
+        // If the flag image is taller, scale based on the container's height
+        scaleHeight = containerHeight;
+        scaleWidth = containerHeight / imageAspectRatio;
+      } else {
+        // If the flag image is wider, scale based on the container's width
+        scaleWidth = containerWidth;
+        scaleHeight = scaleWidth * imageAspectRatio;
+      }
+
+      // Set the size for the flag image to fit within the container
+      uiTransform.setContentSize(scaleWidth, scaleHeight);
+
+      // Finally, add the flagNode to the current node
       this.node.addChild(flagNode);
     });
   }

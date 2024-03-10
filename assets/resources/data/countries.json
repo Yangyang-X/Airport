@@ -1,0 +1,1776 @@
+[
+  {
+    "c": "af",
+    "p": 55,
+    "n": "阿富汗",
+    "ca": "喀布尔",
+    "f": "🇦🇫",
+    "ec": "Afghanistan",
+    "eo": "Islamic Republic of Afghanistan"
+  },
+  {
+    "c": "al",
+    "p": 86,
+    "n": "阿尔巴尼亚",
+    "ca": "地拉那",
+    "f": "🇦🇱",
+    "ec": "Albania",
+    "eo": "Republic of Albania"
+  },
+  {
+    "c": "dz",
+    "p": 137,
+    "n": "阿尔及利亚",
+    "ca": "阿尔及尔",
+    "f": "🇩🇿",
+    "ec": "Algeria",
+    "eo": "People's Democratic Republic of Algeria"
+  },
+  {
+    "c": "ad",
+    "p": 49,
+    "n": "安道尔",
+    "ca": "安道尔城",
+    "f": "🇦🇩",
+    "ec": "Andorra",
+    "eo": "Principality of Andorra"
+  },
+  {
+    "c": "ao",
+    "p": 92,
+    "n": "安哥拉",
+    "ca": "罗安达",
+    "f": "🇦🇴",
+    "ec": "Angola",
+    "eo": "Republic of Angola"
+  },
+  {
+    "c": "ag",
+    "p": 10,
+    "n": "安提瓜和巴布达",
+    "ca": "圣约翰",
+    "f": "🇦🇬",
+    "ec": "Antigua and Barbuda",
+    "eo": "Antigua and Barbuda"
+  },
+  {
+    "c": "ar",
+    "p": 171,
+    "n": "阿根廷",
+    "l": "阿根廷共和国",
+    "ca": "布宜诺斯艾利斯",
+    "f": "🇦🇷",
+    "ec": "Argentina",
+    "eo": "Argentine Republic"
+  },
+  {
+    "c": "am",
+    "p": 127,
+    "n": "亚美尼亚",
+    "ca": "埃里温",
+    "f": "🇦🇲",
+    "ec": "Armenia",
+    "eo": "Republic of Armenia"
+  },
+  {
+    "c": "au",
+    "p": 186,
+    "n": "澳大利亚",
+    "l": "澳大利亚联邦",
+    "ca": "堪培拉",
+    "f": "🇦🇺",
+    "ec": "Australia",
+    "eo": "ecwealth of Australia"
+  },
+  {
+    "c": "at",
+    "p": 178,
+    "n": "奥地利",
+    "ca": "维也纳",
+    "f": "🇦🇹",
+    "ec": "Austria",
+    "eo": "Republic of Austria"
+  },
+  {
+    "c": "az",
+    "p": 143,
+    "n": "阿塞拜疆",
+    "ca": "巴库",
+    "f": "🇦🇿",
+    "ec": "Azerbaijan",
+    "eo": "Republic of Azerbaijan"
+  },
+  {
+    "c": "bs",
+    "p": 107,
+    "n": "巴哈马",
+    "ca": "拿骚",
+    "f": "🇧🇸",
+    "ec": "Bahamas",
+    "eo": "ecwealth of the Bahamas"
+  },
+  {
+    "c": "bh",
+    "p": 106,
+    "n": "巴林",
+    "ca": "麦纳麦",
+    "f": "🇧🇭",
+    "ec": "Bahrain",
+    "eo": "Kingdom of Bahrain"
+  },
+  {
+    "c": "bd",
+    "p": 119,
+    "n": "孟加拉国",
+    "ca": "达卡",
+    "f": "🇧🇩",
+    "ec": "Bangladesh",
+    "eo": "People's Republic of Bangladesh"
+  },
+  {
+    "c": "bb",
+    "p": 48,
+    "n": "巴巴多斯",
+    "ca": "布里奇敦",
+    "f": "🇧🇧",
+    "ec": "Barbados",
+    "eo": "Barbados"
+  },
+  {
+    "c": "by",
+    "p": 155,
+    "n": "白俄罗斯",
+    "ca": "明斯克",
+    "f": "🇧🇾",
+    "ec": "Belarus",
+    "eo": "Republic of Belarus"
+  },
+  {
+    "c": "be",
+    "p": 167,
+    "n": "比利时",
+    "ca": "布鲁塞尔",
+    "f": "🇧🇪",
+    "ec": "Belgium",
+    "eo": "Kingdom of Belgium"
+  },
+  {
+    "c": "bz",
+    "p": 57,
+    "n": "伯利兹",
+    "ca": "贝尔莫潘",
+    "f": "🇧🇿",
+    "ec": "Belize",
+    "eo": "Belize"
+  },
+  {
+    "c": "bj",
+    "p": 80,
+    "n": "贝宁",
+    "ca": "波多诺伏",
+    "f": "🇧🇯",
+    "ec": "Benin",
+    "eo": "Republic of Benin"
+  },
+  {
+    "c": "bt",
+    "p": 47,
+    "n": "不丹",
+    "ca": "廷布",
+    "f": "🇧🇹",
+    "ec": "Bhutan",
+    "eo": "Kingdom of Bhutan"
+  },
+  {
+    "c": "bo",
+    "p": 34,
+    "n": "玻利维亚",
+    "ca": "苏克雷",
+    "f": "🇧🇴",
+    "ec": "Bolivia",
+    "eo": "Plurinational State of Bolivia"
+  },
+  {
+    "c": "ba",
+    "p": 24,
+    "n": "波斯尼亚和黑塞哥维那",
+    "s": "波黑",
+    "ca": "萨拉热窝",
+    "f": "🇧🇦",
+    "ec": "Bosnia and Herzegovina",
+    "eo": "Bosnia and Herzegovina"
+  },
+  {
+    "c": "bw",
+    "p": 78,
+    "n": "博茨瓦纳",
+    "ca": "哈博罗内",
+    "f": "🇧🇼",
+    "ec": "Botswana",
+    "eo": "Republic of Botswana"
+  },
+  {
+    "c": "br",
+    "p": 188,
+    "n": "巴西",
+    "ca": "巴西利亚",
+    "f": "🇧🇷",
+    "ec": "Brazil",
+    "eo": "Federative Republic of Brazil"
+  },
+  {
+    "c": "bn",
+    "p": 15,
+    "n": "文莱",
+    "ca": "斯里巴加湾市",
+    "f": "🇧🇳",
+    "ec": "Brunei",
+    "eo": "Nation of Brunei, Abode of Peace"
+  },
+  {
+    "c": "bg",
+    "p": 162,
+    "n": "保加利亚",
+    "ca": "索非亚",
+    "f": "🇧🇬",
+    "ec": "Bulgaria",
+    "eo": "Republic of Bulgaria"
+  },
+  {
+    "c": "bf",
+    "p": 81,
+    "n": "布基纳法索",
+    "ca": "瓦加杜古",
+    "f": "🇧🇫",
+    "ec": "Burkina Faso",
+    "eo": "Burkina Faso"
+  },
+  {
+    "c": "bi",
+    "p": 79,
+    "n": "布隆迪",
+    "ca": "布琼布拉",
+    "f": "🇧🇮",
+    "ec": "Burundi",
+    "eo": "Republic of Burundi"
+  },
+  {
+    "c": "kh",
+    "p": 114,
+    "n": "柬埔寨",
+    "ca": "金边",
+    "f": "🇰🇭",
+    "ec": "Cambodia",
+    "eo": "Kingdom of Cambodia"
+  },
+  {
+    "c": "cm",
+    "p": 121,
+    "n": "喀麦隆",
+    "ca": "雅温得",
+    "f": "🇨🇲",
+    "ec": "Cameroon",
+    "eo": "Republic of Cameroon"
+  },
+  {
+    "c": "ca",
+    "p": 191,
+    "n": "加拿大",
+    "ca": "渥太华",
+    "f": "🇨🇦",
+    "ec": "Canada",
+    "eo": "Canada"
+  },
+  {
+    "c": "cv",
+    "p": 16,
+    "n": "佛得角",
+    "ca": "普拉亚",
+    "f": "🇨🇻",
+    "ec": "Cape Verde",
+    "eo": "Republic of Cabo Verde"
+  },
+  {
+    "c": "cf",
+    "p": 65,
+    "n": "中非共和国",
+    "s": "中非",
+    "ca": "班吉",
+    "f": "🇨🇫",
+    "ec": "Central African Republic",
+    "eo": "Central African Republic"
+  },
+  {
+    "c": "td",
+    "p": 74,
+    "n": "乍得",
+    "ca": "恩贾梅纳",
+    "f": "🇹🇩",
+    "ec": "Chad",
+    "eo": "Republic of Chad"
+  },
+  {
+    "c": "cl",
+    "p": 142,
+    "n": "智利",
+    "ca": "圣地亚哥",
+    "f": "🇨🇱",
+    "ec": "Chile",
+    "eo": "Republic of Chile"
+  },
+  {
+    "c": "co",
+    "p": 157,
+    "n": "哥伦比亚",
+    "ca": "波哥大",
+    "f": "🇨🇴",
+    "ec": "Colombia",
+    "eo": "Republic of Colombia"
+  },
+  {
+    "c": "km",
+    "p": 36,
+    "n": "科摩罗",
+    "ca": "莫罗尼",
+    "f": "🇰🇲",
+    "ec": "Comoros",
+    "eo": "Union of the Comoros"
+  },
+  {
+    "c": "cr",
+    "p": 111,
+    "n": "哥斯达黎加",
+    "ca": "圣何塞",
+    "f": "🇨🇷",
+    "ec": "Costa Rica",
+    "eo": "Republic of Costa Rica"
+  },
+  {
+    "c": "hr",
+    "p": 151,
+    "n": "克罗地亚",
+    "ca": "萨格勒布",
+    "f": "🇭🇷",
+    "ec": "Croatia",
+    "eo": "Republic of Croatia"
+  },
+  {
+    "c": "cu",
+    "p": 161,
+    "n": "古巴",
+    "ca": "哈瓦那",
+    "f": "🇨🇺",
+    "ec": "Cuba",
+    "eo": "Republic of Cuba"
+  },
+  {
+    "c": "cy",
+    "p": 70,
+    "n": "塞浦路斯",
+    "ca": "尼科西亚",
+    "f": "🇨🇾",
+    "ec": "Cyprus",
+    "eo": "Republic of Cyprus"
+  },
+  {
+    "c": "cz",
+    "p": 163,
+    "n": "捷克",
+    "ca": "布拉格",
+    "f": "🇨🇿",
+    "ec": "Czechia",
+    "eo": "Czech Republic"
+  },
+  {
+    "c": "ci",
+    "p": 64,
+    "n": "科特迪瓦",
+    "s": "象牙海岸",
+    "ca": "亚穆苏克罗",
+    "f": "🇨🇮",
+    "ec": "Côte d'Ivoire",
+    "eo": "Republic of Côte d'Ivoire"
+  },
+  {
+    "c": "cd",
+    "p": 58,
+    "n": "刚果民主共和国",
+    "s": "刚果（金）",
+    "ca": "金沙萨",
+    "f": "🇨🇩",
+    "ec": "DR Congo",
+    "eo": "Democratic Republic of the Congo"
+  },
+  {
+    "c": "dk",
+    "p": 169,
+    "n": "丹麦",
+    "ca": "哥本哈根",
+    "f": "🇩🇰",
+    "ec": "Denmark",
+    "eo": "Kingdom of Denmark"
+  },
+  {
+    "c": "dj",
+    "p": 50,
+    "n": "吉布提",
+    "ca": "吉布提市",
+    "f": "🇩🇯",
+    "ec": "Djibouti",
+    "eo": "Republic of Djibouti"
+  },
+  {
+    "c": "dm",
+    "p": 28,
+    "n": "多米尼克",
+    "ca": "罗索",
+    "f": "🇩🇲",
+    "ec": "Dominica",
+    "eo": "ecwealth of Dominica"
+  },
+  {
+    "c": "do",
+    "p": 135,
+    "n": "多米尼加",
+    "s": "多米尼加共和国",
+    "ca": "圣多明各",
+    "f": "🇩🇴",
+    "ec": "Dominican Republic",
+    "eo": "Dominican Republic"
+  },
+  {
+    "c": "ec",
+    "p": 122,
+    "n": "厄瓜多尔",
+    "ca": "基多",
+    "f": "🇪🇨",
+    "ec": "Ecuador",
+    "eo": "Republic of Ecuador"
+  },
+  {
+    "c": "eg",
+    "p": 168,
+    "n": "埃及",
+    "ca": "开罗",
+    "f": "🇪🇬",
+    "ec": "Egypt",
+    "eo": "Arab Republic of Egypt"
+  },
+  {
+    "c": "sv",
+    "p": 90,
+    "n": "萨尔瓦多",
+    "ca": "圣萨尔瓦多",
+    "f": "🇸🇻",
+    "ec": "El Salvador",
+    "eo": "Republic of El Salvador"
+  },
+  {
+    "c": "gq",
+    "p": 20,
+    "n": "赤道几内亚",
+    "ca": "马拉博",
+    "f": "🇬🇶",
+    "ec": "Equatorial Guinea",
+    "eo": "Republic of Equatorial Guinea"
+  },
+  {
+    "c": "er",
+    "p": 25,
+    "n": "厄立特里亚",
+    "ca": "阿斯马拉",
+    "f": "🇪🇷",
+    "ec": "Eritrea",
+    "eo": "State of Eritrea"
+  },
+  {
+    "c": "ee",
+    "p": 128,
+    "n": "爱沙尼亚",
+    "ca": "塔林",
+    "f": "🇪🇪",
+    "ec": "Estonia",
+    "eo": "Republic of Estonia"
+  },
+  {
+    "c": "sz",
+    "p": 66,
+    "n": "斯威士兰",
+    "ca": "姆巴巴纳",
+    "f": "🇸🇿",
+    "ec": "Eswatini",
+    "eo": "Kingdom of Eswatini"
+  },
+  {
+    "c": "et",
+    "p": 158,
+    "n": "埃塞俄比亚",
+    "ca": "亚的斯亚贝巴",
+    "f": "🇪🇹",
+    "ec": "Ethiopia",
+    "eo": "Federal Democratic Republic of Ethiopia"
+  },
+  {
+    "c": "fj",
+    "p": 82,
+    "n": "斐济",
+    "ca": "苏瓦",
+    "f": "🇫🇯",
+    "ec": "Fiji",
+    "eo": "Republic of Fiji"
+  },
+  {
+    "c": "fi",
+    "p": 164,
+    "n": "芬兰",
+    "ca": "赫尔辛基",
+    "f": "🇫🇮",
+    "ec": "Finland",
+    "eo": "Republic of Finland"
+  },
+  {
+    "c": "fr",
+    "p": 196,
+    "n": "法国",
+    "l": "法兰西共和国",
+    "ca": "巴黎",
+    "f": "🇫🇷",
+    "ec": "France",
+    "eo": "French Republic"
+  },
+  {
+    "c": "ga",
+    "p": 22,
+    "n": "加蓬",
+    "ca": "利伯维尔",
+    "f": "🇬🇦",
+    "ec": "Gabon",
+    "eo": "Gabonese Republic"
+  },
+  {
+    "c": "gm",
+    "p": 71,
+    "n": "冈比亚",
+    "ca": "班珠尔",
+    "f": "🇬🇲",
+    "ec": "Gambia",
+    "eo": "Republic of the Gambia"
+  },
+  {
+    "c": "ge",
+    "p": 138,
+    "n": "格鲁吉亚",
+    "ca": "第比利斯",
+    "f": "🇬🇪",
+    "ec": "Georgia",
+    "eo": "Georgia"
+  },
+  {
+    "c": "de",
+    "p": 197,
+    "n": "德国",
+    "l": "德意志联邦共和国",
+    "ca": "柏林",
+    "f": "🇩🇪",
+    "ec": "Germany",
+    "eo": "Federal Republic of Germany"
+  },
+  {
+    "c": "gh",
+    "p": 124,
+    "n": "加纳",
+    "ca": "阿克拉",
+    "f": "🇬🇭",
+    "ec": "Ghana",
+    "eo": "Republic of Ghana"
+  },
+  {
+    "c": "gr",
+    "p": 165,
+    "n": "希腊",
+    "ca": "雅典",
+    "f": "🇬🇷",
+    "ec": "Greece",
+    "eo": "Hellenic Republic"
+  },
+  {
+    "c": "gd",
+    "p": 52,
+    "n": "格林纳达",
+    "ca": "圣乔治",
+    "f": "🇬🇩",
+    "ec": "Grenada",
+    "eo": "Grenada"
+  },
+  {
+    "c": "gt",
+    "p": 103,
+    "n": "危地马拉",
+    "ca": "危地马拉城",
+    "f": "🇬🇹",
+    "ec": "Guatemala",
+    "eo": "Republic of Guatemala"
+  },
+  {
+    "c": "gn",
+    "p": 67,
+    "n": "几内亚",
+    "ca": "科纳克里",
+    "f": "🇬🇳",
+    "ec": "Guinea",
+    "eo": "Republic of Guinea"
+  },
+  {
+    "c": "gw",
+    "p": 45,
+    "n": "几内亚比绍",
+    "ca": "比绍",
+    "f": "🇬🇼",
+    "ec": "Guinea-Bissau",
+    "eo": "Republic of Guinea-Bissau"
+  },
+  {
+    "c": "gy",
+    "p": 51,
+    "n": "圭亚那",
+    "ca": "乔治敦",
+    "f": "🇬🇾",
+    "ec": "Guyana",
+    "eo": "Co-operative Republic of Guyana"
+  },
+  {
+    "c": "ht",
+    "p": 102,
+    "n": "海地",
+    "ca": "太子港",
+    "f": "🇭🇹",
+    "ec": "Haiti",
+    "eo": "Republic of Haiti"
+  },
+  {
+    "c": "hn",
+    "p": 93,
+    "n": "洪都拉斯",
+    "ca": "特古西加尔巴",
+    "f": "🇭🇳",
+    "ec": "Honduras",
+    "eo": "Republic of Honduras"
+  },
+  {
+    "c": "hu",
+    "p": 181,
+    "n": "匈牙利",
+    "ca": "布达佩斯",
+    "f": "🇭🇺",
+    "ec": "Hungary",
+    "eo": "Hungary"
+  },
+  {
+    "c": "is",
+    "p": 96,
+    "n": "冰岛",
+    "ca": "雷克雅未克",
+    "f": "🇮🇸",
+    "ec": "Iceland",
+    "eo": "Iceland"
+  },
+  {
+    "c": "in",
+    "p": 194,
+    "n": "印度",
+    "ca": "新德里",
+    "f": "🇮🇳",
+    "ec": "India",
+    "eo": "Republic of India"
+  },
+  {
+    "c": "id",
+    "p": 182,
+    "n": "印度尼西亚",
+    "s": "印尼",
+    "ca": "雅加达",
+    "f": "🇮🇩",
+    "ec": "Indonesia",
+    "eo": "Republic of Indonesia"
+  },
+  {
+    "c": "ir",
+    "p": 174,
+    "n": "伊朗",
+    "ca": "德黑兰",
+    "f": "🇮🇷",
+    "ec": "Iran",
+    "eo": "Islamic Republic of Iran"
+  },
+  {
+    "c": "iq",
+    "p": 89,
+    "n": "伊拉克",
+    "ca": "巴格达",
+    "f": "🇮🇶",
+    "ec": "Iraq",
+    "eo": "Republic of Iraq"
+  },
+  {
+    "c": "ie",
+    "p": 147,
+    "n": "爱尔兰",
+    "ca": "都柏林",
+    "f": "🇮🇪",
+    "ec": "Ireland",
+    "eo": "Republic of Ireland"
+  },
+  {
+    "c": "il",
+    "p": 145,
+    "n": "以色列",
+    "ca": "耶路撒冷",
+    "f": "🇮🇱",
+    "ec": "Israel",
+    "eo": "State of Israel"
+  },
+  {
+    "c": "it",
+    "p": 193,
+    "n": "意大利",
+    "ca": "罗马",
+    "f": "🇮🇹",
+    "ec": "Italy",
+    "eo": "Italian Republic"
+  },
+  {
+    "c": "jm",
+    "p": 140,
+    "n": "牙买加",
+    "ca": "金斯敦",
+    "f": "🇯🇲",
+    "ec": "Jamaica",
+    "eo": "Jamaica"
+  },
+  {
+    "c": "jp",
+    "p": 198,
+    "n": "日本",
+    "s": "日本国",
+    "ca": "东京",
+    "f": "🇯🇵",
+    "ec": "Japan",
+    "eo": "Japan"
+  },
+  {
+    "c": "jo",
+    "p": 116,
+    "n": "约旦",
+    "ca": "安曼",
+    "f": "🇯🇴",
+    "ec": "Jordan",
+    "eo": "Hashemite Kingdom of Jordan"
+  },
+  {
+    "c": "kz",
+    "p": 159,
+    "n": "哈萨克斯坦",
+    "ca": "努尔苏丹",
+    "f": "🇰🇿",
+    "ec": "Kazakhstan",
+    "eo": "Republic of Kazakhstan"
+  },
+  {
+    "c": "ke",
+    "p": 160,
+    "n": "肯尼亚",
+    "ca": "内罗毕",
+    "f": "🇰🇪",
+    "ec": "Kenya",
+    "eo": "Republic of Kenya"
+  },
+  {
+    "c": "ki",
+    "p": 41,
+    "n": "基里巴斯",
+    "ca": "塔拉瓦",
+    "f": "🇰🇮",
+    "ec": "Kiribati",
+    "eo": "Independent and Sovereign Republic of Kiribati"
+  },
+  {
+    "c": "kp",
+    "p": 134,
+    "n": "朝鲜",
+    "ca": "平壤",
+    "f": "🇰🇵",
+    "ec": "North Korea",
+    "eo": "Democratic People's Republic of Korea"
+  },
+  {
+    "c": "kr",
+    "p": 185,
+    "n": "韩国",
+    "l": "大韩民国",
+    "ca": "首尔",
+    "f": "🇰🇷",
+    "ec": "South Korea",
+    "eo": "Republic of Korea"
+  },
+  {
+    "c": "kw",
+    "p": 121,
+    "n": "科威特",
+    "ca": "科威特城",
+    "f": "🇰🇼",
+    "ec": "Kuwait",
+    "eo": "State of Kuwait"
+  },
+  {
+    "c": "kg",
+    "p": 107,
+    "n": "吉尔吉斯斯坦",
+    "ca": "比什凯克",
+    "f": "🇰🇬",
+    "ec": "Kyrgyzstan",
+    "eo": "Kyrgyz Republic"
+  },
+  {
+    "c": "la",
+    "p": 64,
+    "n": "老挝",
+    "ca": "万象",
+    "f": "🇱🇦",
+    "ec": "Laos",
+    "eo": "Lao People's Democratic Republic"
+  },
+  {
+    "c": "lv",
+    "p": 155,
+    "n": "拉脱维亚",
+    "ca": "里加",
+    "f": "🇱🇻",
+    "ec": "Latvia",
+    "eo": "Republic of Latvia"
+  },
+  {
+    "c": "lb",
+    "p": 120,
+    "n": "黎巴嫩",
+    "ca": "贝鲁特",
+    "f": "🇱🇧",
+    "ec": "Lebanon",
+    "eo": "Lebanese Republic"
+  },
+  {
+    "c": "ls",
+    "p": 55,
+    "n": "莱索托",
+    "ca": "马塞卢",
+    "f": "🇱🇸",
+    "ec": "Lesotho",
+    "eo": "Kingdom of Lesotho"
+  },
+  {
+    "c": "lr",
+    "p": 27,
+    "n": "利比里亚",
+    "ca": "蒙罗维亚",
+    "f": "🇱🇷",
+    "ec": "Liberia",
+    "eo": "Republic of Liberia"
+  },
+  {
+    "c": "ly",
+    "p": 43,
+    "n": "利比亚",
+    "ca": "的黎波里",
+    "f": "🇱🇾",
+    "ec": "Libya",
+    "eo": "State of Libya"
+  },
+  {
+    "c": "li",
+    "p": 42,
+    "n": "列支敦士登",
+    "ca": "瓦杜兹",
+    "f": "🇱🇮",
+    "ec": "Liechtenstein",
+    "eo": "Principality of Liechtenstein"
+  },
+  {
+    "c": "lt",
+    "p": 131,
+    "n": "立陶宛",
+    "ca": "维尔纽斯",
+    "f": "🇱🇹",
+    "ec": "Lithuania",
+    "eo": "Republic of Lithuania"
+  },
+  {
+    "c": "lu",
+    "p": 76,
+    "n": "卢森堡",
+    "ca": "卢森堡市",
+    "f": "🇱🇺",
+    "ec": "Luxembourg",
+    "eo": "Grand Duchy of Luxembourg"
+  },
+  {
+    "c": "mg",
+    "p": 91,
+    "n": "马达加斯加",
+    "ca": "塔那那利佛",
+    "f": "🇲🇬",
+    "ec": "Madagascar",
+    "eo": "Republic of Madagascar"
+  },
+  {
+    "c": "mw",
+    "p": 98,
+    "n": "马拉维",
+    "ca": "利隆圭",
+    "f": "🇲🇼",
+    "ec": "Malawi",
+    "eo": "Republic of Malawi"
+  },
+  {
+    "c": "my",
+    "p": 150,
+    "n": "马来西亚",
+    "ca": "吉隆坡",
+    "f": "🇲🇾",
+    "ec": "Malaysia",
+    "eo": "Malaysia"
+  },
+  {
+    "c": "mv",
+    "p": 56,
+    "n": "马尔代夫",
+    "ca": "马累",
+    "f": "🇲🇻",
+    "ec": "Maldives",
+    "eo": "Republic of the Maldives"
+  },
+  {
+    "c": "ml",
+    "p": 85,
+    "n": "马里",
+    "ca": "巴马科",
+    "f": "🇲🇱",
+    "ec": "Mali",
+    "eo": "Republic of Mali"
+  },
+  {
+    "c": "mt",
+    "p": 61,
+    "n": "马耳他",
+    "ca": "瓦莱塔",
+    "f": "🇲🇹",
+    "ec": "Malta",
+    "eo": "Republic of Malta"
+  },
+  {
+    "c": "mh",
+    "p": 13,
+    "n": "马绍尔群岛",
+    "ca": "马朱罗",
+    "f": "🇲🇭",
+    "ec": "Marshall Islands",
+    "eo": "Republic of the Marshall Islands"
+  },
+  {
+    "c": "mr",
+    "p": 26,
+    "n": "毛里塔尼亚",
+    "ca": "努瓦克肖特",
+    "f": "🇲🇷",
+    "ec": "Mauritania",
+    "eo": "Islamic Republic of Mauritania"
+  },
+  {
+    "c": "mu",
+    "p": 68,
+    "n": "毛里求斯",
+    "ca": "路易港",
+    "f": "🇲🇺",
+    "ec": "Mauritius",
+    "eo": "Republic of Mauritius"
+  },
+  {
+    "c": "mx",
+    "p": 187,
+    "n": "墨西哥",
+    "ca": "墨西哥城",
+    "f": "🇲🇽",
+    "ec": "Mexico",
+    "eo": "United Mexican States"
+  },
+  {
+    "c": "fm",
+    "p": 11,
+    "n": "密克罗尼西亚",
+    "l": "密克罗尼西亚联邦",
+    "ca": "帕利基尔",
+    "f": "🇫🇲",
+    "ec": "Micronesia",
+    "eo": "Federated States of Micronesia"
+  },
+  {
+    "c": "md",
+    "p": 40,
+    "n": "摩尔多瓦",
+    "ca": "基希讷乌",
+    "f": "🇲🇩",
+    "ec": "Moldova",
+    "eo": "Republic of Moldova"
+  },
+  {
+    "c": "mc",
+    "p": 37,
+    "n": "摩纳哥",
+    "ca": "摩纳哥",
+    "f": "🇲🇨",
+    "l": "摩纳哥公国",
+    "ec": "Monaco",
+    "eo": "Principality of Monaco"
+  },
+  {
+    "c": "mn",
+    "p": 120,
+    "n": "蒙古",
+    "ca": "乌兰巴托",
+    "f": "🇲🇳",
+    "l": "蒙古国",
+    "ec": "Mongolia",
+    "eo": "Mongolia"
+  },
+  {
+    "c": "me",
+    "p": 60,
+    "n": "黑山",
+    "ca": "波德戈里察",
+    "f": "🇲🇪",
+    "ec": "Montenegro",
+    "eo": "Montenegro"
+  },
+  {
+    "c": "ma",
+    "p": 154,
+    "n": "摩洛哥",
+    "ca": "拉巴特",
+    "f": "🇲🇦",
+    "ec": "Morocco",
+    "eo": "Kingdom of Morocco"
+  },
+  {
+    "c": "mz",
+    "p": 115,
+    "n": "莫桑比克",
+    "ca": "马普托",
+    "f": "🇲🇿",
+    "ec": "Mozambique",
+    "eo": "Republic of Mozambique"
+  },
+  {
+    "c": "mm",
+    "p": 113,
+    "n": "缅甸",
+    "ca": "内比都",
+    "f": "🇲🇲",
+    "ec": "Myanmar",
+    "eo": "Republic of the Union of Myanmar"
+  },
+  {
+    "c": "na",
+    "p": 99,
+    "n": "纳米比亚",
+    "ca": "温得和克",
+    "f": "🇳🇦",
+    "ec": "Namibia",
+    "eo": "Republic of Namibia"
+  },
+  {
+    "c": "nr",
+    "p": 9,
+    "n": "瑙鲁",
+    "ca": "亚伦",
+    "f": "🇳🇷",
+    "ec": "Nauru",
+    "eo": "Republic of Nauru"
+  },
+  {
+    "c": "np",
+    "p": 101,
+    "n": "尼泊尔",
+    "ca": "加德满都",
+    "f": "🇳🇵",
+    "ec": "Nepal",
+    "eo": "Federal Democratic Republic of Nepal"
+  },
+  {
+    "c": "nl",
+    "p": 184,
+    "n": "荷兰",
+    "ca": "阿姆斯特丹",
+    "f": "🇳🇱",
+    "l": "荷兰王国",
+    "ec": "Netherlands",
+    "eo": "Kingdom of the Netherlands"
+  },
+  {
+    "c": "nz",
+    "p": 152,
+    "n": "新西兰",
+    "ca": "惠灵顿",
+    "f": "🇳🇿",
+    "ec": "New Zealand",
+    "eo": "New Zealand"
+  },
+  {
+    "c": "ni",
+    "p": 83,
+    "n": "尼加拉瓜",
+    "ca": "马那瓜",
+    "f": "🇳🇮",
+    "ec": "Nicaragua",
+    "eo": "Republic of Nicaragua"
+  },
+  {
+    "c": "ne",
+    "p": 97,
+    "n": "尼日尔",
+    "ca": "尼亚美",
+    "f": "🇳🇪",
+    "ec": "Niger",
+    "eo": "Republic of Niger"
+  },
+  {
+    "c": "ng",
+    "p": 166,
+    "n": "尼日利亚",
+    "ca": "阿布贾",
+    "f": "🇳🇬",
+    "ec": "Nigeria",
+    "eo": "Federal Republic of Nigeria"
+  },
+  {
+    "c": "mk",
+    "p": 75,
+    "n": "北马其顿",
+    "ca": "斯科普里",
+    "f": "🇲🇰",
+    "l": "北马其顿共和国",
+    "ec": "North Macedonia",
+    "eo": "Republic of North Macedonia"
+  },
+  {
+    "c": "no",
+    "p": 172,
+    "n": "挪威",
+    "ca": "奥斯陆",
+    "f": "🇳🇴",
+    "ec": "Norway",
+    "eo": "Kingdom of Norway"
+  },
+  {
+    "c": "om",
+    "p": 88,
+    "n": "阿曼",
+    "ca": "马斯喀特",
+    "f": "🇴🇲",
+    "ec": "Oman",
+    "eo": "Sultanate of Oman"
+  },
+  {
+    "c": "pk",
+    "p": 125,
+    "n": "巴基斯坦",
+    "ca": "伊斯兰堡",
+    "f": "🇵🇰",
+    "ec": "Pakistan",
+    "eo": "Islamic Republic of Pakistan"
+  },
+  {
+    "c": "pw",
+    "p": 17,
+    "n": "帕劳",
+    "ca": "梅莱凯奥克",
+    "f": "🇵🇼",
+    "ec": "Palau",
+    "eo": "Republic of Palau"
+  },
+  {
+    "c": "ps",
+    "p": 53,
+    "n": "巴勒斯坦",
+    "ca": "东耶路撒冷",
+    "f": "🇵🇸",
+    "ec": "Palestine",
+    "eo": "State of Palestine"
+  },
+  {
+    "c": "pa",
+    "p": 105,
+    "n": "巴拿马",
+    "ca": "巴拿马城",
+    "f": "🇵🇦",
+    "ec": "Panama",
+    "eo": "Republic of Panama"
+  },
+  {
+    "c": "pg",
+    "p": 73,
+    "n": "巴布亚新几内亚",
+    "ca": "莫尔兹比港",
+    "f": "🇵🇬",
+    "ec": "Papua New Guinea",
+    "eo": "Independent State of Papua New Guinea"
+  },
+  {
+    "c": "py",
+    "p": 95,
+    "n": "巴拉圭",
+    "ca": "亚松森",
+    "f": "🇵🇾",
+    "ec": "Paraguay",
+    "eo": "Republic of Paraguay"
+  },
+  {
+    "c": "pe",
+    "p": 132,
+    "n": "秘鲁",
+    "ca": "利马",
+    "f": "🇵🇪",
+    "ec": "Peru",
+    "eo": "Republic of Peru"
+  },
+  {
+    "c": "ph",
+    "p": 156,
+    "n": "菲律宾",
+    "ca": "马尼拉",
+    "f": "🇵🇭",
+    "ec": "Philippines",
+    "eo": "Republic of the Philippines"
+  },
+  {
+    "c": "pl",
+    "p": 185,
+    "n": "波兰",
+    "ca": "华沙",
+    "f": "🇵🇱",
+    "ec": "Poland",
+    "eo": "Republic of Poland"
+  },
+  {
+    "c": "pt",
+    "p": 148,
+    "n": "葡萄牙",
+    "ca": "里斯本",
+    "f": "🇵🇹",
+    "ec": "Portugal",
+    "eo": "Portuguese Republic"
+  },
+  {
+    "c": "qa",
+    "p": 134,
+    "n": "卡塔尔",
+    "ca": "多哈",
+    "f": "🇶🇦",
+    "ec": "Qatar",
+    "eo": "State of Qatar"
+  },
+  {
+    "c": "cg",
+    "p": 29,
+    "n": "刚果",
+    "ca": "布拉柴维尔",
+    "f": "🇨🇬",
+    "ec": "Republic of the Congo",
+    "eo": "Republic of the Congo"
+  },
+  {
+    "c": "ro",
+    "p": 177,
+    "n": "罗马尼亚",
+    "ca": "布加勒斯特",
+    "f": "🇷🇴",
+    "ec": "Romania",
+    "eo": "Romania"
+  },
+  {
+    "c": "ru",
+    "p": 192,
+    "n": "俄罗斯",
+    "ca": "莫斯科",
+    "f": "🇷🇺",
+    "s": "俄国",
+    "l": "俄罗斯联邦",
+    "ec": "Russia",
+    "eo": "Russian Federation"
+  },
+  {
+    "c": "rw",
+    "p": 94,
+    "n": "卢旺达",
+    "ca": "基加利",
+    "f": "🇷🇼",
+    "ec": "Rwanda",
+    "eo": "Republic of Rwanda"
+  },
+  {
+    "c": "kn",
+    "p": 9,
+    "n": "圣基茨和尼维斯",
+    "ca": "巴斯特尔",
+    "f": "🇰🇳",
+    "ec": "Saint Kitts and Nevis",
+    "eo": "Federation of Saint Christopher and Nevis"
+  },
+  {
+    "c": "lc",
+    "p": 41,
+    "n": "圣卢西亚",
+    "ca": "卡斯特里",
+    "f": "🇱🇨",
+    "ec": "Saint Lucia",
+    "eo": "Saint Lucia"
+  },
+  {
+    "c": "vc",
+    "p": 12,
+    "n": "圣文森特和格林纳丁斯",
+    "ca": "金斯敦",
+    "f": "🇻🇨",
+    "ec": "Saint Vincent and the Grenadines",
+    "eo": "Saint Vincent and the Grenadines"
+  },
+  {
+    "c": "ws",
+    "p": 32,
+    "n": "萨摩亚",
+    "ca": "阿皮亚",
+    "f": "🇼🇸",
+    "ec": "Samoa",
+    "eo": "Independent State of Samoa"
+  },
+  {
+    "c": "sm",
+    "p": 44,
+    "n": "圣马力诺",
+    "ca": "圣马力诺",
+    "f": "🇸🇲",
+    "ec": "San Marino",
+    "eo": "Republic of San Marino"
+  },
+  {
+    "c": "sa",
+    "p": 170,
+    "n": "沙特阿拉伯",
+    "ca": "利雅得",
+    "f": "🇸🇦",
+    "s": "沙特",
+    "ec": "Saudi Arabia",
+    "eo": "Kingdom of Saudi Arabia"
+  },
+  {
+    "c": "sn",
+    "p": 87,
+    "n": "塞内加尔",
+    "ca": "达喀尔",
+    "f": "🇸🇳",
+    "ec": "Senegal",
+    "eo": "Republic of Senegal"
+  },
+  {
+    "c": "rs",
+    "p": 130,
+    "n": "塞尔维亚",
+    "ca": "贝尔格莱德",
+    "f": "🇷🇸",
+    "s": "塞尔维亚",
+    "l": "塞尔维亚共和国",
+    "ec": "Serbia",
+    "eo": "Republic of Serbia"
+  },
+  {
+    "c": "sc",
+    "p": 31,
+    "n": "塞舌尔",
+    "ca": "维多利亚",
+    "f": "🇸🇨",
+    "ec": "Seychelles",
+    "eo": "Republic of Seychelles"
+  },
+  {
+    "c": "sl",
+    "p": 69,
+    "n": "塞拉利昂",
+    "ca": "弗里敦",
+    "f": "🇸🇱",
+    "ec": "Sierra Leone",
+    "eo": "Republic of Sierra Leone"
+  },
+  {
+    "c": "sg",
+    "p": 141,
+    "n": "新加坡",
+    "ca": "新加坡",
+    "f": "🇸🇬",
+    "ec": "Singapore",
+    "eo": "Republic of Singapore"
+  },
+  {
+    "c": "sk",
+    "p": 146,
+    "n": "斯洛伐克",
+    "ca": "布拉迪斯拉发",
+    "f": "🇸🇰",
+    "ec": "Slovakia",
+    "eo": "Slovak Republic"
+  },
+  {
+    "c": "si",
+    "p": 133,
+    "n": "斯洛文尼亚",
+    "ca": "卢布尔雅那",
+    "f": "🇸🇮",
+    "ec": "Slovenia",
+    "eo": "Republic of Slovenia"
+  },
+  {
+    "c": "sb",
+    "p": 33,
+    "n": "所罗门群岛",
+    "ca": "霍尼亚拉",
+    "f": "🇸🇧",
+    "ec": "Solomon Islands",
+    "eo": "Solomon Islands"
+  },
+  {
+    "c": "so",
+    "p": 38,
+    "n": "索马里",
+    "ca": "摩加迪沙",
+    "f": "🇸🇴",
+    "ec": "Somalia",
+    "eo": "Federal Republic of Somalia"
+  },
+  {
+    "c": "za",
+    "p": 176,
+    "n": "南非",
+    "ca": "比勒陀利亚",
+    "f": "🇿🇦",
+    "ec": "South Africa",
+    "eo": "Republic of South Africa"
+  },
+  {
+    "c": "ss",
+    "p": 35,
+    "n": "南苏丹",
+    "ca": "朱巴",
+    "f": "🇸🇸",
+    "ec": "South Sudan",
+    "eo": "Republic of South Sudan"
+  },
+  {
+    "c": "es",
+    "p": 189,
+    "n": "西班牙",
+    "ca": "马德里",
+    "f": "🇪🇸",
+    "ec": "Spain",
+    "eo": "Kingdom of Spain"
+  },
+  {
+    "c": "lk",
+    "p": 112,
+    "n": "斯里兰卡",
+    "ca": "科伦坡",
+    "f": "🇱🇰",
+    "ec": "Sri Lanka",
+    "eo": "Democratic Socialist Republic of Sri Lanka"
+  },
+  {
+    "c": "sd",
+    "p": 100,
+    "n": "苏丹",
+    "ca": "喀土穆",
+    "f": "🇸🇩",
+    "ec": "Sudan",
+    "eo": "Republic of the Sudan"
+  },
+  {
+    "c": "sr",
+    "p": 46,
+    "n": "苏里南",
+    "ca": "帕拉马里博",
+    "f": "🇸🇷",
+    "ec": "Suriname",
+    "eo": "Republic of Suriname"
+  },
+  {
+    "c": "se",
+    "p": 180,
+    "n": "瑞典",
+    "ca": "斯德哥尔摩",
+    "f": "🇸🇪",
+    "ec": "Sweden",
+    "eo": "Kingdom of Sweden"
+  },
+  {
+    "c": "ch",
+    "p": 179,
+    "n": "瑞士",
+    "ca": "伯尔尼",
+    "f": "🇨🇭",
+    "ec": "Switzerland",
+    "eo": "Swiss Confederation"
+  },
+  {
+    "c": "sy",
+    "p": 59,
+    "n": "叙利亚",
+    "ca": "大马士革",
+    "f": "🇸🇾",
+    "ec": "Syria",
+    "eo": "Syrian Arab Republic"
+  },
+  {
+    "c": "st",
+    "p": 14,
+    "n": "圣多美和普林西比",
+    "ca": "圣多美",
+    "f": "🇸🇹",
+    "ec": "São Tomé and Príncipe",
+    "eo": "Democratic Republic of São Tomé and Príncipe"
+  },
+  {
+    "c": "tj",
+    "p": 109,
+    "n": "塔吉克斯坦",
+    "ca": "杜尚别",
+    "f": "🇹🇯",
+    "ec": "Tajikistan",
+    "eo": "Republic of Tajikistan"
+  },
+  {
+    "c": "tz",
+    "p": 63,
+    "n": "坦桑尼亚",
+    "ca": "多多马",
+    "f": "🇹🇿",
+    "ec": "Tanzania",
+    "eo": "United Republic of Tanzania"
+  },
+  {
+    "c": "th",
+    "p": 173,
+    "n": "泰国",
+    "ca": "曼谷",
+    "f": "🇹🇭",
+    "ec": "Thailand",
+    "eo": "Kingdom of Thailand"
+  },
+  {
+    "c": "tl",
+    "p": 9,
+    "n": "东帝汶",
+    "ca": "帝力",
+    "f": "🇹🇱",
+    "ec": "Timor-Leste",
+    "eo": "Democratic Republic of Timor-Leste"
+  },
+  {
+    "c": "tg",
+    "p": 77,
+    "n": "多哥",
+    "ca": "洛美",
+    "f": "🇹🇬",
+    "ec": "Togo",
+    "eo": "Togolese Republic"
+  },
+  {
+    "c": "to",
+    "p": 23,
+    "n": "汤加",
+    "ca": "努库阿洛法",
+    "f": "🇹🇴",
+    "ec": "Tonga",
+    "eo": "Kingdom of Tonga"
+  },
+  {
+    "c": "tt",
+    "p": 54,
+    "n": "特立尼达和多巴哥",
+    "ca": "西班牙港",
+    "f": "🇹🇹",
+    "ec": "Trinidad and Tobago",
+    "eo": "Republic of Trinidad and Tobago"
+  },
+  {
+    "c": "tn",
+    "p": 139,
+    "n": "突尼斯",
+    "ca": "突尼斯",
+    "f": "🇹🇳",
+    "ec": "Tunisia",
+    "eo": "Tunisian Republic"
+  },
+  {
+    "c": "tr",
+    "p": 183,
+    "n": "土耳其",
+    "ca": "安卡拉",
+    "f": "🇹🇷",
+    "ec": "Turkey",
+    "eo": "Republic of Turkey"
+  },
+  {
+    "c": "tm",
+    "p": 29,
+    "n": "土库曼斯坦",
+    "ca": "阿什哈巴德",
+    "f": "🇹🇲",
+    "ec": "Turkmenistan",
+    "eo": "Turkmenistan"
+  },
+  {
+    "c": "tv",
+    "p": 9,
+    "n": "图瓦卢",
+    "ca": "富纳富提",
+    "f": "🇹🇻",
+    "ec": "Tuvalu",
+    "eo": "Tuvalu"
+  },
+  {
+    "c": "ug",
+    "p": 136,
+    "n": "乌干达",
+    "ca": "坎帕拉",
+    "f": "🇺🇬",
+    "ec": "Uganda",
+    "eo": "Republic of Uganda"
+  },
+  {
+    "c": "ua",
+    "p": 175,
+    "n": "乌克兰",
+    "ca": "基辅",
+    "f": "🇺🇦",
+    "ec": "Ukraine",
+    "eo": "Ukraine"
+  },
+  {
+    "c": "ae",
+    "p": 144,
+    "n": "阿拉伯联合酋长国",
+    "ca": "阿布扎比",
+    "f": "🇦🇪",
+    "s": "阿联酋",
+    "ec": "United Arab Emirates",
+    "eo": "United Arab Emirates"
+  },
+  {
+    "c": "gb",
+    "p": 195,
+    "n": "英国",
+    "ca": "伦敦",
+    "f": "🇬🇧",
+    "s": "英国",
+    "l": "大不列颠及北爱尔兰联合王国",
+    "ec": "United Kingdom",
+    "eo": "United Kingdom of Great Britain and Northern Ireland"
+  },
+  {
+    "c": "us",
+    "p": 200,
+    "n": "美国",
+    "ca": "华盛顿",
+    "f": "🇺🇸",
+    "s": "美国",
+    "l": "美利坚合众国",
+    "ec": "United States",
+    "eo": "United States of America"
+  },
+  {
+    "c": "uy",
+    "p": 117,
+    "n": "乌拉圭",
+    "ca": "蒙得维的亚",
+    "f": "🇺🇾",
+    "ec": "Uruguay",
+    "eo": "Oriental Republic of Uruguay"
+  },
+  {
+    "c": "uz",
+    "p": 153,
+    "n": "乌兹别克斯坦",
+    "ca": "塔什干",
+    "f": "🇺🇿",
+    "ec": "Uzbekistan",
+    "eo": "Republic of Uzbekistan"
+  },
+  {
+    "c": "vu",
+    "p": 39,
+    "n": "瓦努阿图",
+    "ca": "维拉港",
+    "f": "🇻🇺",
+    "ec": "Vanuatu",
+    "eo": "Republic of Vanuatu"
+  },
+  {
+    "c": "va",
+    "p": 79,
+    "n": "梵蒂冈",
+    "ca": "梵蒂冈",
+    "f": "🇻🇦",
+    "ec": "Vatican City",
+    "eo": "Vatican City State"
+  },
+  {
+    "c": "ve",
+    "p": 84,
+    "n": "委内瑞拉",
+    "ca": "加拉加斯",
+    "f": "🇻🇪",
+    "ec": "Venezuela",
+    "eo": "Bolivarian Republic of Venezuela"
+  },
+  {
+    "c": "vn",
+    "p": 149,
+    "n": "越南",
+    "ca": "河内",
+    "f": "🇻🇳",
+    "ec": "Vietnam",
+    "eo": "Socialist Republic of Vietnam"
+  },
+  {
+    "c": "ye",
+    "p": 62,
+    "n": "也门",
+    "ca": "萨那",
+    "f": "🇾🇪",
+    "ec": "Yemen",
+    "eo": "Republic of Yemen"
+  },
+  {
+    "c": "zm",
+    "p": 110,
+    "n": "赞比亚",
+    "ca": "卢萨卡",
+    "f": "🇿🇲",
+    "ec": "Zambia",
+    "eo": "Republic of Zambia"
+  },
+  {
+    "c": "zw",
+    "p": 126,
+    "n": "津巴布韦",
+    "ca": "哈拉雷",
+    "f": "🇿🇼",
+    "s": "辛巴威",
+    "ec": "Zimbabwe",
+    "eo": "Republic of Zimbabwe"
+  }
+]
