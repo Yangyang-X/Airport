@@ -15,6 +15,7 @@ import { Suitcase } from "./Suitcase";
 import { GlobalEvents } from "./GlobalEvents";
 import { Flag } from "./Flag";
 import { Checkmark } from "./Checkmark";
+import { ResultUIManager } from "./ResultUIManager";
 const { ccclass, property } = _decorator;
 
 interface Country {
@@ -84,7 +85,7 @@ export class GameController extends Component {
       (country) => country.p >= 140
     );
     const shuffledCountries = eligibleCountries.sort(() => 0.5 - Math.random());
-    const selectedCountries = shuffledCountries.slice(0, 20);
+    const selectedCountries = shuffledCountries.slice(0, 5); //TODO change back to 20
 
     this.questions = selectedCountries.map((country) => {
       let optionsCountries = eligibleCountries
@@ -196,8 +197,6 @@ export class GameController extends Component {
     }
 
     GlobalEvents.emit("update-score", this.score);
-
-    console.log(`Score: ${this.score}, Time Elapsed: ${timeElapsed}s`);
   }
 
   // Example usage: Call this when a player selects a flag
@@ -225,13 +224,43 @@ export class GameController extends Component {
       // Move to the next question with a delay to show the checkmark
       this.questionIndex++;
       if (this.questionIndex < this.questions.length) {
-        this.clearFlags(); // Ensure you clear existing flags or checkmarks as needed
+        this.clearFlags();
         this.updateQuestion();
       } else {
-        // Game over or loop back to start
-        console.log("Game Over or Loop to Start");
+        this.endGame();
       }
     }, 2000);
+  }
+
+  endGame() {
+    GlobalEvents.emit("update-country-name", "谢谢！");
+
+    this.clearFlags();
+
+    // Example game results
+    const gameResults = [
+      { name: "🧳", number: 20 },
+      { name: "✅", number: this.correctAnswers },
+      { name: "❌", number: this.correctAnswers },
+    ];
+
+    // Assuming ResultUIManager is attached to the same node as GameController or is accessible
+    const resultUIManager = this.node
+      .getChildByName("Result")
+      .getComponent(ResultUIManager);
+    if (resultUIManager) {
+      console.log("GameController: Updating results");
+      resultUIManager.populateResults(gameResults);
+      const canvasSize = view.getVisibleSize();
+
+      resultUIManager.node.setPosition(
+        new Vec3(
+          canvasSize.width / 2 - 132 + 25,
+          canvasSize.height / 2 - 140,
+          0
+        )
+      ); // Center the results UI node
+    }
   }
 
   handleFlagTapped(cca2: string) {
@@ -244,7 +273,7 @@ export class GameController extends Component {
     this.node.addChild(checkmarkNode);
 
     const canvasSize = view.getVisibleSize();
-    console.log(canvasSize);
+
     // Position it in the center of the screen
     checkmarkNode.setPosition(
       canvasSize.width / 2 - 100,
