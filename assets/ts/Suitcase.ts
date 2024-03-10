@@ -42,8 +42,6 @@ export class Suitcase extends Component {
   }
 
   stickFlag(cca2: string) {
-    console.log(`Attaching flag ${cca2} to suitcase`);
-
     // Create a new node for the flag
     const flagNode = new Node(`Flag-${cca2}`);
     const flagSprite = flagNode.addComponent(Sprite);
@@ -51,7 +49,6 @@ export class Suitcase extends Component {
     // Set the size of the flag node using UITransform
 
     const path = `flags/${cca2}/spriteFrame`; // Make sure the path matches your project structure
-    console.log(`Loading sprite frame ${path}`);
 
     resources.load(path, SpriteFrame, (err, spriteFrame: SpriteFrame) => {
       if (err) {

@@ -52,9 +52,8 @@ export class Flag extends Component {
 
       // Calculate the aspect ratio of the container
       const containerAspectRatio = containerHeight / containerWidth;
-      console.log(imageAspectRatio, containerAspectRatio);
 
-      let scaleWidth, scaleHeight;
+      let scaleWidth: number, scaleHeight: number;
 
       // Compare the aspect ratios to decide how to scale the image
       if (imageAspectRatio >= 0.67) {
@@ -80,14 +79,14 @@ export class Flag extends Component {
   }
 
   onFlagTapped() {
-    console.log("Flag tapped", this.flagName);
     tween(this.node)
-      .to(0.2, { scale: new Vec3(1.1, 1.1, 1.1) })
-      .delay(0.4)
-      .to(0.2, { scale: new Vec3(1, 1, 1) })
+      .to(0.2, { scale: new Vec3(1.1, 1.1, 1.1) }) // Scale up
+      .delay(0.4) // Hold the scale
+      .to(0.2, { scale: new Vec3(1, 1, 1) }) // Scale down
+      .call(() => {
+        // Notify parent (FlagsGrid) that this flag was tapped, after animation
+        this.node.emit("flag-tapped", this.flagName, this.correctName);
+      })
       .start();
-
-    // Notify parent (FlagsGrid) that this flag was tapped
-    this.node.emit("flag-tapped", this.flagName, this.correctName);
   }
 }

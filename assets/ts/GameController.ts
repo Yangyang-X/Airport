@@ -9,10 +9,12 @@ import {
   UITransform,
   resources,
   JsonAsset,
+  v2,
 } from "cc";
 import { Suitcase } from "./Suitcase";
 import { GlobalEvents } from "./GlobalEvents";
 import { Flag } from "./Flag";
+import { Checkmark } from "./Checkmark";
 const { ccclass, property } = _decorator;
 
 interface Country {
@@ -36,6 +38,9 @@ export class GameController extends Component {
 
   @property({ type: Prefab })
   flagPrefab: Prefab = null; // Assign this in the editor
+
+  @property({ type: Prefab })
+  CheckmarkPrefab: Prefab = null; // Assign this in the editor
 
   @property
   beltSpeed: number = 100;
@@ -68,8 +73,6 @@ export class GameController extends Component {
       const jsonData = (asset as JsonAsset).json;
       if (Array.isArray(jsonData)) {
         this.countryData = jsonData;
-        console.log(this.countryData);
-        // You can now access countryData as an array of objects
       } else {
         console.error("The loaded JSON is not an array.");
       }
@@ -145,7 +148,6 @@ export class GameController extends Component {
       for (let col = 0; col < cols; col++) {
         // Instantiate a new flag
         const newFlag = instantiate(this.flagPrefab);
-        console.log("newFlag", newFlag);
         newFlag.on("flag-tapped", this.handleFlagTapped, this);
 
         // Calculate and set the position of the flag within the grid
@@ -180,7 +182,7 @@ export class GameController extends Component {
     });
   }
 
-  onPlayerAnswer(isCorrect: boolean) {
+  updateScoreForAnswer(isCorrect: boolean) {
     const timeElapsed = (Date.now() - this.questionStartTime) / 1000; // Time elapsed in seconds
     const timeFactor = Math.max(0, 1 - timeElapsed / this.maxTimeForFullPoints); // Decreases with time
 
@@ -202,8 +204,8 @@ export class GameController extends Component {
   checkAnswer(cca2: string) {
     const currentQuestion = this.questions[this.questionIndex];
     const isCorrect = cca2.toLowerCase() === currentQuestion.answer.c;
-    console.log(`Selected: ${cca2}, Correct: ${currentQuestion.answer.c}`);
     if (isCorrect) {
+      this.showCheckmark();
       const correspondingSuitcase = this.node.children.find(
         (child) => child.name === `Suitcase_${cca2.toLowerCase()}`
       );
@@ -217,30 +219,55 @@ export class GameController extends Component {
       }
     }
 
-    this.onPlayerAnswer(isCorrect);
+    this.updateScoreForAnswer(isCorrect);
 
-    // Move to the next question
-    this.questionIndex++;
-    if (this.questionIndex < this.questions.length) {
-      this.updateQuestion();
-    } else {
-      // Game over or loop back to start
-      console.log("Game Over or Loop to Start");
-    }
+    setTimeout(() => {
+      // Move to the next question with a delay to show the checkmark
+      this.questionIndex++;
+      if (this.questionIndex < this.questions.length) {
+        this.clearFlags(); // Ensure you clear existing flags or checkmarks as needed
+        this.updateQuestion();
+      } else {
+        // Game over or loop back to start
+        console.log("Game Over or Loop to Start");
+      }
+    }, 2000);
   }
 
   handleFlagTapped(cca2: string) {
-    console.log("Flag Tapped: " + cca2);
     this.checkAnswer(cca2);
+  }
+
+  showCheckmark() {
+    // Instantiate the checkmark prefab and add it to the scene
+    const checkmarkNode = instantiate(this.CheckmarkPrefab);
+    this.node.addChild(checkmarkNode);
+
+    const canvasSize = view.getVisibleSize();
+    console.log(canvasSize);
+    // Position it in the center of the screen
+    checkmarkNode.setPosition(
+      canvasSize.width / 2 - 100,
+      canvasSize.height / 2 - 50,
+      0
+    );
+
+    // Optional: Add animation or scale it as required
+
+    // Hide or destroy the checkmark after a brief period
+    setTimeout(() => {
+      checkmarkNode.destroy(); // or checkmarkNode.active = false; based on your needs
+    }, 1500); // Adjust timing as necessary
   }
 
   addSuitcaseWithoutFlag(cca2: string) {
     const newSuitcase = instantiate(this.suitcasePrefab);
     newSuitcase.name = `Suitcase_${cca2}`;
 
-    const canvasSize = view.getVisibleSize();
     const beltPosition = this.conveyorBeltNode.getPosition();
     const yPosition = beltPosition.y;
+
+    const canvasSize = view.getVisibleSize();
     const xPosition = canvasSize.width;
     newSuitcase.setPosition(new Vec3(xPosition, yPosition, 0));
 

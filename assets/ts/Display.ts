@@ -18,7 +18,6 @@ export class Display extends Component {
   }
 
   updateName(name: string) {
-    console.log("update country name", name);
     if (this.countryNameLabel) {
       this.countryNameLabel.string = name;
     }

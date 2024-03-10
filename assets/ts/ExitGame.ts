@@ -10,7 +10,6 @@ export class ExitGame extends Component {
   update(deltaTime: number) {}
 
   onExitClicked() {
-    console.log("Exit button clicked");
     // For navigating to a main menu scene within the game
     // director.loadScene("MainMenu");
 
