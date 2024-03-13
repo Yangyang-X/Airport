@@ -2,12 +2,12 @@
   "ver": "1.1.50",
   "importer": "prefab",
   "imported": true,
-  "uuid": "dd181974-471a-458d-94a9-ff0870fad771",
+  "uuid": "1531cae9-8e4a-4698-8db9-afbb881551e5",
   "files": [
     ".json"
   ],
   "subMetas": {},
   "userData": {
-    "syncNodeName": "ResultItem"
+    "syncNodeName": "ConfirmButton"
   }
 }

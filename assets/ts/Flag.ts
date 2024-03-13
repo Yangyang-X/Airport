@@ -18,6 +18,10 @@ export class Flag extends Component {
 
   @property
   correctName: string = "";
+
+  @property
+  isEnabled: boolean = true;
+
   start() {}
 
   update(deltaTime: number) {}
@@ -79,6 +83,11 @@ export class Flag extends Component {
   }
 
   onFlagTapped() {
+    if (!this.isEnabled) {
+      console.log("Interaction is disabled.");
+      return; // Early return if interactions are disabled
+    }
+
     tween(this.node)
       .to(0.2, { scale: new Vec3(1.1, 1.1, 1.1) }) // Scale up
       .delay(0.4) // Hold the scale
@@ -88,5 +97,10 @@ export class Flag extends Component {
         this.node.emit("flag-tapped", this.flagName, this.correctName);
       })
       .start();
+  }
+
+  setInteraction(enabled: boolean) {
+    console.log("Flag setInteraction", enabled);
+    this.isEnabled = enabled;
   }
 }

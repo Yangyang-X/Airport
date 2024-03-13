@@ -37,7 +37,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -686.407,
+      "y": -738.183,
       "z": 0
     },
     "_lrot": {
@@ -146,7 +146,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -162.255859375,
+      "x": -120.24609375,
       "y": 0,
       "z": 0
     },
@@ -187,7 +187,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 42.255859375,
+      "width": 60,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -223,8 +223,8 @@
       "b": 255,
       "a": 255
     },
-    "_string": "label",
-    "_horizontalAlign": 1,
+    "_string": "三个数",
+    "_horizontalAlign": 0,
     "_verticalAlign": 1,
     "_actualFontSize": 20,
     "_fontSize": 20,
@@ -302,7 +302,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
+      "x": 7.75390625,
       "y": 0,
       "z": 0
     },
@@ -343,7 +343,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 240,
+      "width": 120,
       "height": 40
     },
     "_anchorPoint": {
@@ -393,7 +393,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 162.255859375,
+      "x": 120.24609375,
       "y": 0,
       "z": 0
     },
@@ -434,7 +434,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 42.255859375,
+      "width": 44.4921875,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -470,8 +470,8 @@
       "b": 255,
       "a": 255
     },
-    "_string": "label",
-    "_horizontalAlign": 1,
+    "_string": "5555",
+    "_horizontalAlign": 2,
     "_verticalAlign": 1,
     "_actualFontSize": 20,
     "_fontSize": 20,
@@ -543,7 +543,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 324.51171875,
+      "width": 256.4921875,
       "height": 40
     },
     "_anchorPoint": {
@@ -577,11 +577,11 @@
       "height": 40
     },
     "_startAxis": 0,
-    "_paddingLeft": 0,
-    "_paddingRight": 0,
+    "_paddingLeft": 8,
+    "_paddingRight": 8,
     "_paddingTop": 0,
     "_paddingBottom": 0,
-    "_spacingX": 0,
+    "_spacingX": 8,
     "_spacingY": 0,
     "_verticalDirection": 1,
     "_horizontalDirection": 0,

@@ -9,12 +9,15 @@ import {
   Vec3,
   view,
 } from "cc";
+import { GlobalEvents } from "./GlobalEvents";
 const { ccclass, property } = _decorator;
 
 @ccclass("Suitcase")
 export class Suitcase extends Component {
   @property
   beltSpeed: number = 100;
+
+  private isFlagged: boolean = false;
 
   start() {
     // this.flag.active = false;
@@ -30,10 +33,20 @@ export class Suitcase extends Component {
     this.node.setPosition(newPosition);
 
     const canvasSize = view.getVisibleSize();
+    // console.log("newPosition", newPosition);
 
-    // Check if the suitcase is offscreen on the left side
-    // Considering the origin (0,0) is at the center of the screen,
-    // so the left edge is at x = -canvasSize.width / 2
+    if (newPosition.x < -50) {
+      if (!this.isFlagged) {
+        // The suitcase was not flagged or was flagged incorrectly
+        console.log(
+          "Suitcase reached the end without the correct flag or any flag."
+        );
+        // Here you could call a method to decrement the score, show an alert, etc.
+        this.emitSuitcaseMissed(); // This is a hypothetical method. You'll need to implement it.
+        this.isFlagged = true;
+      }
+    }
+
     if (newPosition.x < -canvasSize.width / 2 - 120) {
       this.node.removeFromParent();
       // Additionally, you might want to destroy the node completely if not using pooling
@@ -41,7 +54,13 @@ export class Suitcase extends Component {
     }
   }
 
+  emitSuitcaseMissed() {
+    GlobalEvents.emit("suitcase-missed");
+  }
+
   stickFlag(cca2: string) {
+    this.isFlagged = true;
+
     // Create a new node for the flag
     const flagNode = new Node(`Flag-${cca2}`);
     const flagSprite = flagNode.addComponent(Sprite);
