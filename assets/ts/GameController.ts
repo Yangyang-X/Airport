@@ -19,6 +19,7 @@ import { Suitcase } from "./Suitcase";
 import { GlobalEvents } from "./GlobalEvents";
 import { Flag } from "./Flag";
 import { ResultUIManager } from "./ResultUIManager";
+import { UpgradeNote } from "./UpgradeNote";
 const { ccclass, property } = _decorator;
 
 interface Country {
@@ -35,30 +36,33 @@ interface Question {
 @ccclass("GameController")
 export class GameController extends Component {
   @property({ type: Node })
-  conveyorBeltNode: Node = null; // Assign this in the editor
+  conveyorBeltNode: Node = null;
 
   @property({ type: Prefab })
-  suitcasePrefab: Prefab = null; // Assign this in the editor
+  suitcasePrefab: Prefab = null;
 
   @property({ type: Prefab })
-  flagPrefab: Prefab = null; // Assign this in the editor
+  flagPrefab: Prefab = null;
 
   @property({ type: Prefab })
-  CheckmarkPrefab: Prefab = null; // Assign this in the editor
+  CheckmarkPrefab: Prefab = null;
 
   @property({ type: Prefab })
-  ConfirmButtonPrefab: Prefab = null; // Assign this in the editor
+  ConfirmButtonPrefab: Prefab = null;
 
   @property({ type: Node })
-  preGameUI: Node = null; // Assign this in the editor to your pre-game UI node
+  preGameUI: Node = null;
 
   @property({ type: Label })
-  levelDisplayLabel: Label = null; // Assign this in the editor to the label showing the level
+  levelDisplayLabel: Label = null;
 
   @property({ type: Node })
-  startButtonNode: Node = null; // Assign this in the editor to your "开始" button node
+  startButtonNode: Node = null;
 
-  private confirmButtonNode: Node = null; // Class level reference
+  @property({ type: Node })
+  UpgradeNoteNode: Node = null;
+
+  private confirmButtonNode: Node = null;
 
   private currentLevel: number = 1;
 
@@ -103,6 +107,7 @@ export class GameController extends Component {
   }
 
   updatePreGameUI() {
+    this.UpgradeNoteNode.active = false;
     const levelName = this.levelNames[this.currentLevel] || "实习生";
     this.levelDisplayLabel.string = `当前级别：${levelName}`;
     this.preGameUI.active = true;
@@ -446,26 +451,29 @@ export class GameController extends Component {
       this.confirmButtonNode = null; // Clear the reference
     }
 
+    GlobalEvents.emit("update-country-name", "准备");
+    this.updatePreGameUI();
+
     if (this.justUpgraded) {
       this.showUpgradeNote();
       this.justUpgraded = false;
     }
-    GlobalEvents.emit("update-country-name", "准备");
-    this.updatePreGameUI();
   }
 
   showUpgradeNote() {
-    let toastNode = new Node("Toast");
-    let toastLabel = toastNode.addComponent(Label);
-    toastLabel.string = "恭喜你升级了！";
-    toastNode.parent = this.node; // Assuming 'this' is a component with a node property
+    // 创建一个新的 Node
+    this.UpgradeNoteNode.active = true;
 
-    toastNode.setPosition(new Vec3(0, 0, 0));
+    // 设置等级名称
+    let levelName = this.levelNames[this.currentLevel];
+    let component = this.UpgradeNoteNode.getComponent(UpgradeNote);
+    component.setLevel(levelName);
+    component.playAnimation();
 
-    // Auto-remove the toast after 'duration' seconds
+    // 3秒后移除
     setTimeout(() => {
-      toastNode.removeFromParent();
-    }, 3000);
+      this.UpgradeNoteNode.active = false;
+    }, 2400);
   }
 
   handleFlagTapped(cca2: string) {
@@ -486,8 +494,6 @@ export class GameController extends Component {
       canvasSize.height / 2 - 50,
       0
     );
-
-    // Optional: Add animation or scale it as required
 
     // Hide or destroy the checkmark after a brief period
     setTimeout(() => {
